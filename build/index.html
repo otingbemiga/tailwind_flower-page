@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="./js/main.js" defer></script>
+    <title>Flower page</title>
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="bg-teal-700 text-white sticky top-0 z-10">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">🌼Flower Page</a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="cursor-pointer relative w-8 h-8 text-3xl md:hidden "
+          >
+            <!-- &#x2630; -->
+            <div
+              class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after::transition-all after::duration-500"
+            ></div>
+          </button>
+          <nav class="hidden space-x-8 text-xl md:block " arial-label="main">
+            <a href="#flowers" class="hover:opacity-90">Our Flowers</a>
+            <a href="#testimonials" class="hover:opacity-90">Testimonial</a>
+            <a href="#contact" class="hover:opacity-90">Contact Us</a>
+          </nav>
+        </div>
+      </section>
+
+      <section
+        id="mobile-menu"
+        class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+
+        <nav
+          class="flex flex-col min-h-screen item-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-90"
+            >Home</a
+          >
+          <a href="#flowers" class="w-full text-center py-6 hover:opacity-90"
+            >Our Flower</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center py-6 hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-90"
+            >Contact Us</a
+          >
+          <a href="#footer" class="w-full text-center py-6 hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
+      </section>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+      <section
+        id="hero"
+        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-5xl font-bold text-center sm:text-5sl sm:text-left text-slate-900 dark:text-white"
+          >
+            Blooms of Bliss:
+            <span class="text-indigo-700 dark:text-indigo-300"
+              >The Radiant World of Flowers</span
+            >. Diving into the World of Floral Fancy
+          </h2>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            Like other green plants, flowers participate in the process of
+            photosynthesis. They absorb carbon dioxide and release oxygen,
+            contributing to the oxygen cycle essential for all life on Earth.
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            Plant and cherish flowers today for a better tomorrow
+          </p>
+        </article>
+        <img class="w-1/2" src="./img/blossom.png" alt="blossom flower" />
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section
+        id="flowers"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Our Flowers
+        </h2>
+        <ul
+          class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img src="./img/flora.png" alt="flora" class="w-1/2 mb-6" />
+
+            <h3 class="text 3xl text-center text-slate-900 dark:text-white">
+              Floral
+            </h3>
+            <p
+              class="hidden sm:block text 3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              $
+            </p>
+            <p
+              class="sm:hidden text 2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Affordable Floral
+            </p>
+          </li>
+
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img src="./img/nature.png" alt="nature" class="w-1/2 mb-6" />
+
+            <h3 class="text 3xl text-center text-slate-900 dark:text-white">
+              Nature Flower
+            </h3>
+            <p
+              class="hidden sm:block text 3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              $$
+            </p>
+            <p
+              class="sm:hidden text 2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Best Selling Flower
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img src="./img/rose.png" alt="rose" class="w-1/2 mb-6" />
+
+            <h3 class="text 3xl text-center text-slate-900 dark:text-white">
+              Rose Flower
+            </h3>
+            <p
+              class="hidden sm:block text 3xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              $$$
+            </p>
+            <p
+              class="sm:hidden text 2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Luxury Flower
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section
+        id="testimonials"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Testimonial
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text:white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text:white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Flowers are the music of the ground.
+              <span class="italic">From earth's lips spoken </span>without
+              sound.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2lx text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; Edwin Curran
+          </figcaption>
+        </figure>
+
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text:white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text:white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              A flower does not think of competing with the flower next to it.
+              It just blooms.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2lx text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; Zen Shin
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text:white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text:white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              A garden to walk in and immensity to dream in--what more could he
+              ask? A few flowers at his feet and above him the stars.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2lx text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; Victor Hugo
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section
+        id="contact"
+        class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Contact Us
+        </h2>
+        <form id="contactForm"
+          action="mailto:otingbemiga@gmail.com" method="post" enctype="text/plain"
+          class="maxw-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"/>
+
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10" required
+            placeholder="Your Message"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+          ></textarea>
+
+          <input type="submit" value="Submit" class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">
+         
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>156 Allen Avenue,</h2>
+          Ikeja, <br />
+          Nigeria. <br />
+          Email:
+          <a href="mailto:otingbemiga@gmail.com">otingbemiga@gmail.com</a>
+          <br />
+          phone: <a href="tel:+2348036580132">+2348036580132</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#flowers" class="hover:opacity-90">Our Flowers</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
